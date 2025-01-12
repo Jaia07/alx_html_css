@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* Global components */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans 3", serif;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 16px;
+  margin: auto;
+}
+.container-1 {
+  text-align: center;
+  padding: 0 150px;
+}
+h2 {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.container-2 {
+  margin-top: 90px;
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.container-2-elements {
+  text-align: center;
+  width: 300px;
+}
+.container-2-elements img {
+  max-width: 100%;
+}
+.container-2-elements p {
+  font-weight: 400;
+  font-size: 10px;
+  padding: 0 13px;
+}
+h5 {
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .container-1 {
+    padding: 0 16px;
+  }
+  .container-2 {
+    flex-wrap: wrap;
+  }
+  .container-2-elements {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .container-1 {
+    padding: 0 25px;
+  }
+  .container-2 {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .container-2-elements {
+    padding: 0 35px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .container-1 {
+    padding: 0 50px;
+  }
+}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* Global components */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans 3", serif;
+}
+
+#main {
+  background: rgba(7, 22, 41, 1);
+}
+.container {
+  max-width: 1000px;
+  padding: 0 16px;
+  margin: auto;
+}
+.logo {
+  width: 10rem;
+  height: 2rem;
+}
+.logo-socials-container {
+  padding: 90px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.socials-container {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: white;
+}
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
+  color: rgba(7, 22, 41, 1);
+}
+.copyright {
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  font-size: 9px;
+  padding-bottom: 25px;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 480px) {
+  .logo-socials-container {
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 0;
+  }
+}

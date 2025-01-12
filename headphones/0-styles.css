@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* Global components */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans 3", serif;
+}
+
+/* Header Section */
+#main {
+  background-image: url(images/headphones_hero_1.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.container-1 {
+  max-width: 1000px;
+  padding: 16px;
+  margin: auto;
+}
+.container-2 {
+  max-width: 1000px;
+  padding: 0 170px;
+  margin: auto;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  width: 10rem;
+  height: 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 37px;
+  align-items: center;
+}
+.nav-list a {
+  color: white;
+}
+.nav-list a:hover {
+  color: #ff6565;
+  transition: all 0.3s ease;
+}
+.btn {
+  padding: 12px 25px;
+  background-color: rgba(255, 101, 101, 1);
+  border-radius: 50px;
+  outline: none;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+  border-style: none;
+  margin-top: 30px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.8);
+}
+.btn:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
+  color: white;
+}
+.main-content .main-content-h4 {
+  font-weight: 600;
+}
+.main-content .main-content-paragraph {
+  font-weight: lighter;
+  margin-top: 60px;
+  text-align: center;
+}
+.menu-btn {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  display: none;
+  width: 20px;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 480px) {
+  .menu-btn {
+    display: block;
+  }
+  .container-2 {
+    max-width: 1000px;
+    padding: 16px;
+    margin: auto;
+  }
+  nav {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .main-content {
+    margin-top: 150px;
+  }
+  .container-1 {
+    padding-top: 50px;
+  }
+}
+
+/* Responsive design for Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container-2 {
+    max-width: 1000px;
+    padding: 0 50px;
+    margin: auto;
+  }
+}

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* Global components */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans 3", serif;
+}
+#headphones-hero-2 {
+  background-image: url(images/headphones_hero_2.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1000px;
+  padding: 16px;
+  margin: auto;
+  color: white;
+}
+p {
+  font-weight: lighter;
+}
+.container-1 {
+  text-align: center;
+  padding: 0 150px;
+}
+h2 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.container-2 {
+  margin-top: 80px;
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 100px;
+}
+.container-2 img {
+  width: 8rem;
+  height: 7rem;
+}
+/* Including hover effect scaling on the pentagon */
+.container-2-elements {
+  width: auto;
+  height: auto;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.container-2-elements:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.container-2-elements-texts {
+  position: absolute;
+  top: 28%;
+  left: 22%;
+  color: white;
+}
+.container-2-elements h5 {
+  font-size: 30px;
+}
+.container-2-elements p {
+  font-size: 9px;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 480px) {
+  .container-1 {
+    padding: 0 16px;
+  }
+  .container-2 {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .container-1 {
+    padding: 0 25px;
+  }
+  .container-2 {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .container-1 {
+    padding: 0 50px;
+  }
+}

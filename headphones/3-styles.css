@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* Global components */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans 3", serif;
+}
+.container {
+  min-height: 100vh;
+}
+.section-contact-us {
+  max-width: 1000px;
+  padding: 16px;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+.contact-us {
+  border: 2px solid black;
+  max-width: 30vw;
+  margin: auto;
+  text-align: left;
+}
+.contact-us h2 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+.form-data {
+  margin: auto;
+}
+.line {
+  width: 250px;
+  height: 1px;
+  background: black;
+  margin: auto;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  outline: none;
+  border: none;
+}
+.btn {
+  padding: 12px 25px;
+  background-color: rgba(255, 101, 101, 1);
+  border-radius: 50px;
+  outline: none;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+  border-style: none;
+  margin-top: 30px;
+  box-shadow: 0 3px 12px rgba(197, 5, 5, 0.8);
+}
+.button-section {
+  text-align: center;
+}
+.label {
+  text-align: right;
+}
